@@ -13,20 +13,17 @@ namespace Kata1
                 return -1;
             }
 
-
-            var map = new Dictionary<int, bool>();
+            var dict = new Dictionary<int, bool>();
 
             for(var i = 0; i < list.Length; i++)
             {
 
-                bool seen;
-
-                if (map.TryGetValue(list[i], out seen))
+                if (dict.TryGetValue(list[i], out bool seen))
                 {
                     return list[i];
                 }
 
-                map[list[i]] = true;
+                dict[list[i]] = true;
             }
 
             return -1;
