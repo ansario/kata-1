@@ -7,7 +7,6 @@ namespace Kata1
     {
         public int FindFirstDuplicate(int[] list)
         {
-
             if (list == null || !list.Any())
             {
                 return -1;
