@@ -16,7 +16,6 @@ namespace Kata1
 
             for(var i = 0; i < list.Length; i++)
             {
-
                 if (dict.TryGetValue(list[i], out bool seen))
                 {
                     return list[i];
